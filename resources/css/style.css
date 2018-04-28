@@ -1,0 +1,137 @@
+/*--Universal Styles--*/
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+h1, h2, h3 {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  color: blue;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: .75rem;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+/*--Header--*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 64px;
+  background-color: #ffffff;
+  opacity: .95;
+  border-bottom: solid 1px #d8d8d8;
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+}
+
+#company-name {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  font-weight: 300;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo span {
+  font-weight: 700;
+}
+
+#logo img {
+  margin-left: 24px;
+}
+
+
+/*--Navigation--*/
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+nav ul {
+  display: flex;
+  align-content: center;
+}
+
+nav li {
+  margin-right: 16px;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  opacity: .8;
+  text-decoration: line-through;
+}
+
+a {
+  color: #blue;
+  text-decoration: none;
+}
+
+
+/*--Navigation Breakpoints--*/
+
+@media only screen and (max-width:770px) {
+  nav h5 {
+    display: none;
+  }
+  nav li:nth-child(3n) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  nav img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #company-name {
+    display: none;
+  }
+  nav li {
+    margin: 0 1.2rem;
+  }
+  nav {
+    width: 60%
+  }
+}
