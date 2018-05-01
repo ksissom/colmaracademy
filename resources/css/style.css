@@ -104,7 +104,7 @@ nav a:hover {
 }
 
 a {
-  color: #blue;
+  color: #maroon;
   text-decoration: none;
 }
 
@@ -196,7 +196,7 @@ hgroup {
 }
 
 .button:hover {
-  background-color: blue;
+  background-color: maroon;
   color: white;
   transition: .25s ease 150ms;
 }
@@ -520,5 +520,37 @@ aside .story:hover {
 @media only screen and (max-width: 660px) {
   #thesis aside, #thesis h3, #thesis p {
     display: none;
+  }
+}
+
+/*--Footer--*/
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid #d5d5d5;
+  font-weight: 300;
+}
+
+#legal a {
+  margin: 0 2rem;
+}
+
+#legal a:hover {
+  text-decoration: line-through;
+}
+
+
+/*--Footer Breakpoint--*/
+
+@media only screen and (max-width: 600px) {
+  footer {
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    font-size: 0.85rem;
   }
 }
